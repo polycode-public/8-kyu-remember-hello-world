@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright (C) 2025-2026 Polycode Limited
 import { describe, test, expect } from "vitest";
-import { main, getIdentity, name, version, description } from "../../src/lib/main.js";
+import { main, getIdentity, helloWorld, name, version, description } from "../../src/lib/main.js";
 
 describe("Main Output", () => {
   test("should terminate without error", () => {
@@ -22,5 +22,11 @@ describe("Library Identity", () => {
   test("getIdentity returns correct structure", () => {
     const identity = getIdentity();
     expect(identity).toEqual({ name, version, description });
+  });
+});
+
+describe("Hello World", () => {
+  test("helloWorld returns 'Hello World!'", () => {
+    expect(helloWorld()).toBe("Hello World!");
   });
 });
