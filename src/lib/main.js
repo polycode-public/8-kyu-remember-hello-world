@@ -27,6 +27,10 @@ export function getIdentity() {
   return { name, version, description };
 }
 
+export function helloWorld() {
+  return "Hello World!";
+}
+
 // FizzBuzz library functions
 
 export function fizzBuzzSingle(n) {

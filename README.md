@@ -111,24 +111,22 @@ The pipeline runs as GitHub Actions workflows. An LLM supervisor gathers reposit
 
 ## Examples
 
-Below are quick examples showing how to use the fizzBuzz library from this repository.
+Below are quick examples showing how to use the helloWorld function from this repository.
 
 Node (ESM):
 
 ```js
-import { fizzBuzz, fizzBuzzSingle } from './src/lib/main.js';
+import { helloWorld } from './src/lib/main.js';
 
-console.log(fizzBuzzSingle(3)); // "Fizz"
-console.log(fizzBuzz(15)); // ["1","2","Fizz",...,"FizzBuzz"]
+console.log(helloWorld()); // "Hello World!"
 ```
 
 Browser (via src/web/lib.js):
 
 ```html
 <script type="module">
-  import { fizzBuzz, fizzBuzzSingle } from './src/web/lib.js';
-  console.log(fizzBuzz(15));
-  console.log(fizzBuzzSingle(7));
+  import { helloWorld } from './src/web/lib.js';
+  console.log(helloWorld());
 </script>
 ```
 
