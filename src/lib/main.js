@@ -23,6 +23,10 @@ export const name = pkg.name;
 export const version = pkg.version;
 export const description = pkg.description;
 
+export function helloWorld() {
+  return "Hello World!";
+}
+
 export function getIdentity() {
   return { name, version, description };
 }
