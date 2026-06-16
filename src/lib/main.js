@@ -50,3 +50,6 @@ if (isNode) {
     main(args);
   }
 }
+
+// demo() — exercised by src/web/lib.js renderDemo for the showcase screenshot.
+export const demo = () => helloWorld();
